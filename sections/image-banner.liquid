@@ -91,13 +91,13 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- style -%}        
-            h2.banner__heading{{ block.id }} {
+            h2.banner__heading {
               color: {{ block.settings.heading_color }};
             }
           {%- endstyle -%}
           
           {%- when 'heading' -%}
-            <h2 class="banner__heading{{ block.id }} banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            <h2 class="banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
