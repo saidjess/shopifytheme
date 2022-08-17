@@ -97,7 +97,7 @@
           {%- endstyle -%}
           
           {%- when 'heading' -%}
-            <h2 class="banner__heading banner__heading{{ block.id }} {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            <h2 class="banner__heading{{ block.id }} banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
