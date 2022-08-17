@@ -34,10 +34,20 @@
       "info": "t:sections.custom-liquid.settings.custom_liquid.info"
     },
     {
-      "type": "richtext",
-      "id": "name",
-      "default": "<p>Talk about your brand</p>",
-      "label": "Name"
+      "type": "select",
+      "id": "type",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "custom_section",
+          "label": "Custom Section"
+        }
+      ],
+      "default": "default",
+      "label": "Default"
     },
     {
       "type": "select",
