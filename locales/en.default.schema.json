@@ -372,18 +372,6 @@
         "options__4": {
           "label": "Extra large"
         }
-      },
-      "heading_align": {
-        "label": "Heading Align",
-        "options__1": {
-          "label": "Center"
-        },
-        "options__2": {
-          "label": "Left"
-        },
-        "options__3": {
-          "label": "Rigth"
-        }
       }
     },
     "announcement-bar": {
