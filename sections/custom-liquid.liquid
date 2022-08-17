@@ -33,12 +33,16 @@
     {{ section.settings.custom_liquid }}
 
       <div class="container">
-        <div class="box">
-          
-        </div>
-        <div class="box">
-          
-        </div>
+        {%- for block in section.blocks -%}
+          <div class="item">
+            <div class="box">
+              
+            </div>
+            <div class="box">
+              {{ block.id }}
+            </div>
+          </div>
+        {% endfor %}
       </div>
   </div>
 </section>
