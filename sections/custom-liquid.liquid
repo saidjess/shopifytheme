@@ -12,13 +12,27 @@
 }
 {%- endstyle -%}
 
+{% if settings.type == "custom_section" %}
+
 <section class="color-{{ section.settings.color_scheme }} gradient">
   <div class="section-{{ section.id }}-padding">
-      <div class="container">
-        {{ section.settings.custom_liquid }}
+    {{ section.settings.custom_liquid }}
+
+      <div>
+        <p>Teste</p>
       </div>
   </div>
 </section>
+
+{% else %}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="section-{{ section.id }}-padding">
+    {{ section.settings.custom_liquid }}
+  </div>
+</div>
+
+{% endif %}
 
 {% schema %}
 {
