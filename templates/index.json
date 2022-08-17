@@ -49,6 +49,15 @@
         "show_text_below": false
       }
     },
+    "166077118784b2aa6c": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -230,6 +239,7 @@
   },
   "order": [
     "image_banner",
+    "166077118784b2aa6c",
     "rich_text",
     "featured_collection",
     "collage",
