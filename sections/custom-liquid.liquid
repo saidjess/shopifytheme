@@ -22,6 +22,14 @@
   padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
 }
 
+.section-{{ section.id }} .item{
+  justify-content: space-between;
+}
+
+.section-{{ section.id }} .item .box{
+  width: calc(100%/2 - 20px)
+}
+
 @media screen and (min-width: 750px) {
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top }}px;
@@ -154,15 +162,9 @@
         },
         {
           "type": "richtext",
-          "id": "text",
+          "id": "heading",
           "default": "<p>Talk about your brand</p>",
-          "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
-        },
-        {
-          "type": "text",
-          "id": "text_image",
-          "default": "Image",
-          "label": "Image"
+          "label": "Heading"
         },
         {
           "type": "color",
