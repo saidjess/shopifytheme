@@ -51,8 +51,21 @@
     },
     "166077118784b2aa6c": {
       "type": "custom-liquid",
+      "blocks": {
+        "de45b4f5-4e40-4fef-842c-5c3e2265e090": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_color": "#FFFFFF"
+          }
+        }
+      },
+      "block_order": [
+        "de45b4f5-4e40-4fef-842c-5c3e2265e090"
+      ],
       "settings": {
         "custom_liquid": "",
+        "type": "custom_section",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
