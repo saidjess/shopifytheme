@@ -58,8 +58,8 @@
             "image": "shopify:\/\/shop_images\/t-shirt-store.jpg",
             "title": "Item 1 teste",
             "title_color": "#050303",
-            "details": "<p>Talk about your brand<\/p>",
-            "details_color": "#e22120"
+            "details": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec massa non eros auctor egestas et sollicitudin nisl. Praesent luctus nisi quis est dictum, eget elementum nisl viverra. Nam condimentum nunc lobortis magna ullamcorper fermentum. Aenean lacinia metus lacus, non pretium purus convallis ac. Nam vestibulum blandit eleifend. Curabitur rhoncus lobortis augue ut varius. Duis ut mattis risus, consequat ultrices sem. Fusce maximus velit vulputate elementum euismod.<\/p>",
+            "details_color": "#636363"
           }
         },
         "485a6853-bdba-4f04-ab68-5fb06e80b0e2": {
@@ -68,8 +68,8 @@
             "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
             "title": "Item 2 teste",
             "title_color": "#aa69ff",
-            "details": "<p>Talk about your brand<\/p>",
-            "details_color": "#02b2a3"
+            "details": "<p>Quisque vel ipsum sodales, convallis velit sit amet, euismod nisi. Curabitur leo nisi, ultrices quis massa eget, convallis mattis augue. Ut pulvinar aliquet arcu. Ut lectus ipsum, pulvinar ac justo mattis, tempor sagittis massa. Etiam dapibus congue odio, sed lacinia felis accumsan eget. In faucibus eros risus. Integer at posuere felis.<\/p>",
+            "details_color": "#636363"
           }
         }
       },
