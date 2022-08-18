@@ -58,7 +58,7 @@
           
           <div class="item-{{ block.id }}">
             <div class="box">
-              <img src="{{ block.settings.image }}" alt="{{ block.settings.title }}" />
+              <img src="{{ block.settings.image | image_url: width: 533 }}" alt="{{ block.settings.title }}" />
             </div>
             <div class="box">
                 <h2>{{ block.settings.title }}</h2>
