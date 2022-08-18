@@ -22,11 +22,11 @@
         {%- for block in section.blocks -%}
 
         {%- style -%}
-        .section-{{ section.id }} .item{
+        .item-{{ block.id }}{
           justify-content: space-between;
         }
         
-        .section-{{ section.id }} .item .box{
+        .item-{{ block.id }} .box{
           width: calc(100%/2 - 20px)
         }
         
@@ -35,7 +35,7 @@
         }
         {%- endstyle -%}
           
-          <div class="item">
+          <div class="item-{{ block.id }}">
             <div class="box">
               
             </div>
