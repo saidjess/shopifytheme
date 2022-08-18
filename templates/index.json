@@ -55,8 +55,11 @@
         "de45b4f5-4e40-4fef-842c-5c3e2265e090": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_color": "#FFFFFF"
+            "image": "shopify:\/\/shop_images\/t-shirt-store.jpg",
+            "title": "Item 1 teste",
+            "title_color": "#050303",
+            "details": "<p>Talk about your brand<\/p>",
+            "details_color": "#e22120"
           }
         }
       },
