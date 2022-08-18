@@ -61,10 +61,21 @@
             "details": "<p>Talk about your brand<\/p>",
             "details_color": "#e22120"
           }
+        },
+        "485a6853-bdba-4f04-ab68-5fb06e80b0e2": {
+          "type": "heading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "title": "Item 2 teste",
+            "title_color": "#aa69ff",
+            "details": "<p>Talk about your brand<\/p>",
+            "details_color": "#02b2a3"
+          }
         }
       },
       "block_order": [
-        "de45b4f5-4e40-4fef-842c-5c3e2265e090"
+        "de45b4f5-4e40-4fef-842c-5c3e2265e090",
+        "485a6853-bdba-4f04-ab68-5fb06e80b0e2"
       ],
       "settings": {
         "custom_liquid": "",
