@@ -148,20 +148,20 @@
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": "vestuario"
+            "collection": "frontpage"
           }
         },
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "acessorio-x",
             "second_image": false
           }
         },
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "vestuario"
           }
         }
       },
