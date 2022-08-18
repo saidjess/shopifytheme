@@ -12,7 +12,7 @@
 }
 {%- endstyle -%}
 
-{% if settings.type == "custom_section" %}
+{% if section.settings.type == "custom_section" %}
 
 {%- style -%}
   
@@ -55,7 +55,7 @@
   <div class="section-{{ section.id }}-padding">
     {{ section.settings.type_custom }}
 
-    <p>{{ settings.type }}</p>
+    <p>{{ section.settings.type }}</p>
   </div>
 </div>
 
