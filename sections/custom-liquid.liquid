@@ -33,6 +33,14 @@
         .item-{{ block.id }} .box{
           width: calc(100%/2 - 20px)
         }
+
+        .item-{{ block.id }} .box h2{
+          color: {{ block.settings.title_color }}
+        }
+
+        .item-{{ block.id }} .box p{
+          color: {{ block.settings.details_color }}
+        }
         
         @media screen and (min-width: 750px) {
         
