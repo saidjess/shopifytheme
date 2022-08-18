@@ -34,6 +34,13 @@
           width: calc(100%/2 - 20px)
         }
 
+        .item-{{ block.id }} .box:last-child{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+          
         .item-{{ block.id }} .box h2{
           color: {{ block.settings.title_color }}
         }
