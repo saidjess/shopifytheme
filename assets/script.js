@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  fetch("https://api.thecatapi.com/v1/images/search", { method: 'GET'})
+  fetch("https://api.thecatapi.com/v1/images/search")
     .then(function(response) {
       console.log(response);
     })
