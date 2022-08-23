@@ -18,7 +18,7 @@ window.onload = function() {
 
     var p1 = new Promise(
       function(resolve, reject) {
-        const res = fetch(url,
+        return fetch(url,
               { method: 'GET', headers: {"Content-Type": "application/json"}}
              )
         .then(function(response) {
