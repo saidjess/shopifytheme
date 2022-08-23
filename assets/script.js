@@ -17,7 +17,7 @@ window.onload = function() {
     var myHeaders = new Headers();
     
     fetch(url,
-          { method: 'GET', headers: "Content-Type": "application/json"}
+          { method: 'GET', headers: {"Content-Type": "application/json"}}
          )
     .then(function(response) {
       console.log(response);
