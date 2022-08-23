@@ -7,6 +7,10 @@ window.onload = function() {
   fetch(url,{ method: 'GET',})
   .then(function(res) {
     console.log(res);
+
+    res.forEach(function(item){
+      console.log(item);
+    });
   })
   .catch(function(res) {
     console.log(res);
