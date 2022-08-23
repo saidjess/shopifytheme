@@ -48,8 +48,8 @@
 
 #apiCats h2:before{
   content: "";
-  background-color: #000;
-  height: 3px;
+  background-color: #ccc;
+  height: 2px;
   width: 240px;
   position: absolute;
   bottom: -10px;
