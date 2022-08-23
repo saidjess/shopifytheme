@@ -56,7 +56,7 @@ window.onload = function() {
                         `;
                 });
               
-                document.getElementById("instagramPosts").html(html);
+                document.getElementById("instagramPosts").innerHTML = html;
             })
           })
         } catch (error) {
