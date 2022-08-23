@@ -4,7 +4,9 @@ window.onload = function() {
 
   console.log(url);
   
-  fetch(url,{ method: 'GET',})
+  fetch(url,
+        { method: 'GET',}
+       )
   .then(function(res) {
     console.log(res);
 
