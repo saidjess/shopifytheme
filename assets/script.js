@@ -11,6 +11,7 @@ window.onload = function() {
           data.then(function(res) {            
             let html = "";
             html += "<h2>Imagens aleatórias de gatinhos</h2>";
+            html += "<button onclick="cats()">Nova imagem</button>";
             res.forEach(function(item, index){
                 html +='<div class="imagem"><img src="'+item.url+'" alt=""/></div>';
             });
