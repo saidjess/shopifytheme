@@ -8,10 +8,12 @@ window.onload = function() {
       console.log(res);
     });
 
+    const token = "IGQVJVUHdEeEJySno0NjQ1TVBXYlZAjbjRKUkFucVVIcllJb2tjNVlSdWNvYzZAKajZAodFB1cHZAUZAjhZAZAHhkdFNCVXNBeXlPOHlYcVpJQkc5RWVKcHVxbDIwN1EwSVV5anhMWXpiVDh4ZAjNlelFvT1ZAiSwZDZD";
+    const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,caption,permalink";
+
     posts();
     async function posts(){
-        const token = "IGQVJVUHdEeEJySno0NjQ1TVBXYlZAjbjRKUkFucVVIcllJb2tjNVlSdWNvYzZAKajZAodFB1cHZAUZAjhZAZAHhkdFNCVXNBeXlPOHlYcVpJQkc5RWVKcHVxbDIwN1EwSVV5anhMWXpiVDh4ZAjNlelFvT1ZAiSwZDZD";
-        const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,caption,permalink";
+        
 
         try {
           await fetch(url, {
@@ -34,7 +36,7 @@ window.onload = function() {
 
     var p1 = new Promise(
       function(resolve, reject) {
-        return fetch("https://api.thecatapi.com/v1/images/search", {
+        return fetch(url, {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
