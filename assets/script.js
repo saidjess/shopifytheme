@@ -6,7 +6,7 @@ window.onload = function() {
       
       data.then(function(res) {
           console.log(res.data)
-      }
+      })
               
     })
     .catch(function(res) {
