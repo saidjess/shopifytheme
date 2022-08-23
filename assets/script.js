@@ -34,22 +34,21 @@ window.onload = function() {
 
     var p1 = new Promise(
       function(resolve, reject) {
-        return fetch(url,
-              { method: 'GET', headers: {"Content-Type": "application/json"}}
-             )
-        .then(function(response) {
-          console.log(response);
-        })
-        .catch(function(res) {
-          console.log(res);
-        });
+        return fetch(url, {
+            method: "GET",
+            headers: { "Content-Type": "application/json" }
+          }).then(function(response) {
+                console.log(response.json());
+                const promise = response.json();
+
+                promise.then(function(json) {
+                  console.log(json)
+                });
 
         console.log(resolve);
       }
     )
 
-
-    
     console.log(p1);
   }
 };
