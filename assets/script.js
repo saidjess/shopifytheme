@@ -7,6 +7,7 @@ window.onload = function() {
       headers: { "Content-Type": "application/json" }
     }).then(function(response) {
         const data = response.json();
+        console.log(data);
         
         data.then(function(res) {
             console.log(res.data)
