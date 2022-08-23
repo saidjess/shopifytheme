@@ -8,7 +8,7 @@ window.onload = function() {
         { method: 'GET', headers: myHeaders}
        )
   .then(function(res) {
-    console.log(res);
+    console.log(res.ok);
   })
   .catch(function(res) {
     console.log(res);
