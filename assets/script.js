@@ -7,8 +7,8 @@ window.onload = function() {
   fetch(url,
         { method: 'GET', headers: myHeaders}
        )
-  .then(function(res) {
-    console.log(res.ok);
+  .then(function(response) {
+    console.log(response);
     response.blob().then(function(myBlob) {
       var objectURL = URL.createObjectURL(myBlob);
       myImage.src = objectURL;
