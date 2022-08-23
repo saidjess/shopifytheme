@@ -1,17 +1,21 @@
 window.onload = function() {
+  cats();
 
-  fetch("https://api.thecatapi.com/v1/images/search")
-    .then(function(response) {
-      const data = response.json();
-      
-      data.then(function(res) {
-          console.log(res.data)
+  async function cats(){
+    await fetch("https://api.thecatapi.com/v1/images/search", {
+      method: "GET",
+      headers: { "Content-Type": "application/json" }
+    }).then(function(response) {
+        const data = response.json();
+        
+        data.then(function(res) {
+            console.log(res.data)
+        })
       })
-              
-    })
-    .catch(function(res) {
-      console.log(res);
-    });
+      .catch(function(res) {
+        console.log(res);
+      });
+  }
 
     
 
