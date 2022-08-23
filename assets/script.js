@@ -12,7 +12,7 @@ window.onload = function() {
           console.log(res);
           
           let html = "";
-          res.data.forEach(function(item, index){
+          res.forEach(function(item, index){
               html +='<div class="item"><img src="'+item.url+'" alt=""/></div>';
           });
         
