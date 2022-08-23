@@ -22,14 +22,13 @@ window.onload = function() {
             let res;
             const data = response.json();
             console.log(data);
-            
-              return data;
+
+            const res = (res) => res.json()
+            return res;
 
             console.log(res);
           })
 
-          const resultado = await fetch(promiseResult).then((res) => res.json());
-          console.log(resultado);
           
         } catch (error) {
           console.log(error)
