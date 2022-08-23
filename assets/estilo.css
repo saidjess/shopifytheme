@@ -55,6 +55,13 @@
   bottom: -10px;
 }
 
+#apiCats .item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 #apiCats .item img{
   max-width: 100%
 }
