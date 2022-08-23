@@ -10,7 +10,7 @@ window.onload = function() {
           
           data.then(function(res) {            
             let html = "";
-            html += "<div><h2>Imagens aleatórias de gatinhos</h2></div>";
+            html += '<div class="title"><h2>Imagens aleatórias de gatinhos</h2></div>';
             res.forEach(function(item, index){
                 html +='<div class="imagem"><img src="'+item.url+'" alt=""/></div>';
             });
@@ -38,7 +38,7 @@ window.onload = function() {
 
             data.then(function(res) {
                 let html = "";
-                html += "<div><h2>Testando api instagram</h2></div>";
+                html += '<div class="title"><h2>Testando api instagram</h2></div>';
                 res.data.forEach(function(item, index){
                   if(index < 5){
                       html +='<div class="item"><a href="'+item.permalink+'""><div class="imagem" style="background-image: url('+item.media_url+');"></div></a></div>';
