@@ -38,3 +38,7 @@
 #apiCats h2{
   width: 100%;
 }
+
+#apiCats .item img{
+  max-width: 100%
+}
