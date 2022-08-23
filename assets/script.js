@@ -1,31 +1,29 @@
 window.onload = function() {
-  cats();
-  
-  async function cats(){
-    await fetch("https://api.thecatapi.com/v1/images/search", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" }
-    }).then(function(response) {
-        const data = response.json();
-        
-        data.then(function(res) {
-          console.log(res);
-          
-          let html = "";
-          res.forEach(function(item, index){
-              html +='<div class="item"><img src="'+item.url+'" alt=""/></div>';
-          });
-        
-          document.getElementById("apiCats").innerHTML = html;
-        })
-      })
-      .catch(function(res) {
-        console.log(res);
-      });
-  }
-
+    cats();
     
-
+    async function cats(){
+      await fetch("https://api.thecatapi.com/v1/images/search", {
+        method: "GET",
+        headers: { "Content-Type": "application/json" }
+      }).then(function(response) {
+          const data = response.json();
+          
+          data.then(function(res) {
+            console.log(res);
+            
+            let html = "";
+            res.forEach(function(item, index){
+                html +='<div class="item"><img src="'+item.url+'" alt=""/></div>';
+            });
+          
+            document.getElementById("apiCats").innerHTML = html;
+          })
+        })
+        .catch(function(res) {
+          console.log(res);
+        });
+    }
+  
     posts();
   
     async function posts(){
@@ -40,14 +38,6 @@ window.onload = function() {
             const data = response.json();
 
             data.then(function(res) {
-                var template = `
-                  <div class="item">
-                    <a href="{LINK}">
-                      <div class="imagem" style="background-image: url({IMAGEM});"></div>
-                    </a>
-                  </div>
-                  `;
-
                 let html = "";
 
                 res.data.forEach(function(item, index){
