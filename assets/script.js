@@ -16,29 +16,23 @@ window.onload = function() {
   
     async function posts(){
         try {
-          const response = await fetch(url, {
+          const campaignsResponse = await fetch(url, {
             method: "GET",
             headers: { "Content-Type": "application/json" }
+          }).then(function(response) {
+
+            const data = response.json();
+
+            console.log(data);
+            
+            if (response.ok) {
+              res.json(data);
+            }
+
+            console.log(res);
           })
-
-          const data = await response.json();
-
-          if (response.ok) {
-            res.json(data);
-    
-            console.log(response.json());
-          } else {
-            res.status(500).json({
-              message: "Search campaigns request error.",
-            });
-          }
-
-          console.log(res);
-    
-          return res;
-        }
-        catch (error) {
-          console.log(error);
+        } catch (error) {
+          console.log(error)
         }
     }
   
