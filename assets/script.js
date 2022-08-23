@@ -17,17 +17,17 @@ window.onload = function() {
     var myHeaders = new Headers();
 
     var p1 = new Promise(
-    function(resolve, reject) {
-      const res = fetch(url,
-            { method: 'GET', headers: {"Content-Type": "application/json"}}
-           )
-      .then(function(response) {
-        console.log(response);
-      })
-      .catch(function(res) {
-        console.log(res);
-      });
-    }
+      function(resolve, reject) {
+        const res = fetch(url,
+              { method: 'GET', headers: {"Content-Type": "application/json"}}
+             )
+        .then(function(response) {
+          console.log(response);
+        })
+        .catch(function(res) {
+          console.log(res);
+        });
+      }
     )
 
 
