@@ -9,7 +9,14 @@ window.onload = function() {
         const data = response.json();
         
         data.then(function(res) {
-            console.log(res)
+          console.log(res);
+          
+          let html = "";
+          res.data.forEach(function(item, index){
+              html +='<div class="item"><a href="'+item.permalink+'""><div class="imagem" style="background-image: url('+item.media_url+');"></div></a></div>';
+          });
+        
+          document.getElementById("apiCats").innerHTML = html;
         })
       })
       .catch(function(res) {
