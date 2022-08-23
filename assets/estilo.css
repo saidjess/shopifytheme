@@ -35,7 +35,8 @@
   
 }
 
-#apiCats h2{
+#apiCats h2,
+#instagramPosts h2{
   width: 100%;
   text-align: center;
   position: relative;
@@ -46,7 +47,8 @@
   margin-bottom: 30px
 }
 
-#apiCats h2:before{
+#apiCats h2:before,
+#instagramPosts h2:before{
   content: "";
   background-color: #ccc;
   height: 2px;
