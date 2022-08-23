@@ -21,7 +21,7 @@ window.onload = function() {
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
 
-            const data = response.json();
+            const data = await response.json();
 
             console.log(data);
             
