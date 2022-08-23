@@ -7,15 +7,22 @@
 
 #instagramPosts .item a{
   width: 100%;
-  height: 100%
+  height: 100%;
+  display: flex;
 }
 
 #instagramPosts .item{
   background-size: cover;
-  height: 300px;
-  width: calc(100%/5);
+  width: calc(100%/5 - 20px);
 }
 
 #instagramPosts .item .imagem{
-  padding-top: 100%
+    padding-top: 100%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
