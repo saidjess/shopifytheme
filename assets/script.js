@@ -8,7 +8,9 @@ window.onload = function() {
       }).then(function(response) {
           const data = response.json();
           
-          data.then(function(res) {            
+          data.then(function(res) {
+            console.log(res);
+            
             let html = "";
             html += '<div class="title"><h2>Imagens aleatórias de gatinhos</h2></div>';
             res.forEach(function(item, index){
