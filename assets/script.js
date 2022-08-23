@@ -12,7 +12,6 @@ window.onload = function() {
     const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,caption,permalink";
 
     posts();
-    let res;
   
     async function posts(){
         try {
@@ -20,6 +19,7 @@ window.onload = function() {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
+            let res;
             const data = response.json();
             console.log(data);
             
