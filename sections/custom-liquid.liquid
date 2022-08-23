@@ -19,55 +19,57 @@
     {{ section.settings.custom_liquid }}
 
       <div class="container page-width">
-        {%- for block in section.blocks -%}
 
-        {%- style -%}
-        .item-{{ block.id }}{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: flex-start;
-          padding: 4rem 0;
-        }
-        
-        .item-{{ block.id }} .box{
-          width: calc(100%/2 - 20px)
-        }
-
-        .item-{{ block.id }} .box:last-child{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-        }
+        <div class="itens">
+          {%- for block in section.blocks -%}
+  
+          {%- style -%}
+          .item-{{ block.id }}{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 4rem 0;
+          }
           
-        .item-{{ block.id }} .box h2{
-          color: {{ block.settings.title_color }};
-          width: 100%;
-          font-weight: bold;
-        }
-
-        .item-{{ block.id }} .box p{
-          color: {{ block.settings.details_color }};
-          width: 100%;
-        }
-        
-        @media screen and (min-width: 750px) {
-        
-        }
-        {%- endstyle -%}
+          .item-{{ block.id }} .box{
+            width: calc(100%/2 - 20px)
+          }
+  
+          .item-{{ block.id }} .box:last-child{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+          }
+            
+          .item-{{ block.id }} .box h2{
+            color: {{ block.settings.title_color }};
+            width: 100%;
+            font-weight: bold;
+          }
+  
+          .item-{{ block.id }} .box p{
+            color: {{ block.settings.details_color }};
+            width: 100%;
+          }
           
-          <div class="item-{{ block.id }}">
-            <div class="box">
-              <img src="{{ block.settings.image | image_url: width: 550 }}" alt="{{ block.settings.title }}" />
+          @media screen and (min-width: 750px) {
+          
+          }
+          {%- endstyle -%}
+            
+            <div class="item-{{ block.id }}">
+              <div class="box">
+                <img src="{{ block.settings.image | image_url: width: 550 }}" alt="{{ block.settings.title }}" />
+              </div>
+              <div class="box">
+                  <h2>{{ block.settings.title }}</h2>
+                  <p>{{ block.settings.details }}</p>
+              </div>
             </div>
-            <div class="box">
-                <h2>{{ block.settings.title }}</h2>
-                <p>{{ block.settings.details }}</p>
-            </div>
-          </div>
-        {% endfor %}
-
+          {% endfor %}
+        </div>
 
         <div id="instagramPosts">
         </div>
