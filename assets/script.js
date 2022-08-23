@@ -4,7 +4,7 @@ window.onload = function() {
 
   var myHeaders = new Headers();
   
-  fetch(url,
+  fetch("https://graph.instagram.com/me/media?access_token=IGQVJVUHdEeEJySno0NjQ1TVBXYlZAjbjRKUkFucVVIcllJb2tjNVlSdWNvYzZAKajZAodFB1cHZAUZAjhZAZAHhkdFNCVXNBeXlPOHlYcVpJQkc5RWVKcHVxbDIwN1EwSVV5anhMWXpiVDh4ZAjNlelFvT1ZAiSwZDZD&fields=media_url,caption,permalink",
         { method: 'GET', headers: myHeaders, mode: 'cors'}
        )
   .then(function(res) {
