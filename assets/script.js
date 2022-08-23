@@ -1,5 +1,5 @@
 window.onload = function() {
-  const token = "IGQVJVM2FOYlB3ZAUd0SW9hYTd6bDBpRHFGWGgzbEFydEZA2MTN0Nzc3bnpiTFBpcGg0LWRLaVRvOFBPX2QyamhJQ1FwbDRjeGY0dTFOUGRlWmNmUVRzS280RndBaDRPdG1FSnpuUHd4VUw4QzY0UGptQgZDZD";
+  const token = "IGQVJWUEhzQTlPS2dUUDRsbEJJcUQtUURiVXpDNndHQzFyTk5KNkVpQTFpb3ZAJNTNIUWlfMWVUOXZA6QmRONFRIaVlBUk1SQXdqNDUyeGtBYm56NjdhSEkzZA3RISFdkWUpkd3Y1SEQ4R1ZAaam16d0tlZAwZDZD";
   const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,media_type,caption,permalink";
 
   console.log(url);
