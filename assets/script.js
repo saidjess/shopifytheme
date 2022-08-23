@@ -27,6 +27,7 @@ window.onload = function() {
       .catch(function(res) {
         console.log(res);
       });
+    }
     )
 
 
