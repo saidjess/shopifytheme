@@ -34,7 +34,7 @@ window.onload = function() {
 
     var p1 = new Promise(
       function(resolve, reject) {
-        return fetch(url, {
+        return fetch("https://api.thecatapi.com/v1/images/search", {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
