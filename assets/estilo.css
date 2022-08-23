@@ -41,9 +41,18 @@
   
 }
 
+#apiCats .title,
+#instagramPosts .title{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+
 #apiCats h2,
 #instagramPosts h2{
-  width: 100%;
+  width: auto;
   text-align: center;
   position: relative;
   display: flex;
@@ -59,9 +68,9 @@
   content: "";
   background-color: #ff6aa3;
   height: 2px;
-  width: 240px;
+  width: 100%;
   position: absolute;
-  bottom: -10px;
+  bottom: -4px;
 }
 
 #apiCats .imagem{
