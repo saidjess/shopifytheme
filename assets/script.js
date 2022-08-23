@@ -29,28 +29,15 @@ window.onload = function() {
             const data = response.json();
 
             data.then(function(res) {
-                console.log(res.data)
-
                 var template = `
                   <div class="item">
-                  <a href="{LINK}">
-                  <div class="imagem" style="background-image: url({IMAGEM});"></div>
-                  <div class="opcoes">
-                  <div class="box">
-                  <img src="imgs/curtir.svg" alt="Instagram">
-                  <img src="imgs/comentar.svg" alt="Instagram">
-                  <img src="imgs/compartilhar.svg" alt="Instagram">
-                  </div>
-                  <div class="box">
-                  <img src="imgs/salvar.svg" alt="Instagram">
-                  </div>
-                  </div>
-                  </a>
+                    <a href="{LINK}">
+                      <div class="imagem" style="background-image: url({IMAGEM});"></div>
+                    </a>
                   </div>
                   `;
 
                 res.data.forEach(function(item, index){
-                  console.log(item);
                       const imagem = item.media_url;
                       const link = item.permalink;
                       const montaEstrutura = template.replace("{IMAGEM}", imagem).replace("{LINK}", link);
