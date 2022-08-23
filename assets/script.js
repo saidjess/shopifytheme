@@ -20,9 +20,7 @@ window.onload = function() {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
-
             const data = response.json();
-
             console.log(data);
             
             if (response.ok) {
