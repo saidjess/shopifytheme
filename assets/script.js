@@ -12,21 +12,21 @@ window.onload = function() {
     const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,caption,permalink";
 
     posts();
+    const res = "";
     async function posts(){
         
-
         try {
           await fetch(url, {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
-                console.log(response.json());
 
-                response.json().then(function(json) {
-                  console.log(json)
-                });
-              
-              console.log(response);
+            const data = await response.json();
+            if (response.ok) {
+              res.json(data);
+            }
+      
+            return res;
           })
         } catch (error) {
           console.log(error)
