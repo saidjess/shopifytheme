@@ -15,7 +15,7 @@ window.onload = function() {
   
     async function posts(){
         try {
-          await fetch(url, {
+          const promiseResult = await fetch(url, {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
@@ -24,11 +24,15 @@ window.onload = function() {
             console.log(data);
             
             if (response.ok) {
-              res.json(data);
+              return res.json(data);
             }
 
             console.log(res);
           })
+
+          const resultado = await fetch((res) => res.json());
+          console.log(resultado);
+          
         } catch (error) {
           console.log(error)
         }
