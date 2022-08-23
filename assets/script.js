@@ -4,11 +4,15 @@ window.onload = function() {
 
   var myHeaders = new Headers();
   
-  fetch("https://graph.instagram.com/me/media?access_token=IGQVJVUHdEeEJySno0NjQ1TVBXYlZAjbjRKUkFucVVIcllJb2tjNVlSdWNvYzZAKajZAodFB1cHZAUZAjhZAZAHhkdFNCVXNBeXlPOHlYcVpJQkc5RWVKcHVxbDIwN1EwSVV5anhMWXpiVDh4ZAjNlelFvT1ZAiSwZDZD&fields=media_url,caption,permalink",
+  fetch(url,
         { method: 'GET', headers: myHeaders}
        )
   .then(function(res) {
     console.log(res.ok);
+    response.blob().then(function(myBlob) {
+      var objectURL = URL.createObjectURL(myBlob);
+      myImage.src = objectURL;
+    });
   })
   .catch(function(res) {
     console.log(res);
