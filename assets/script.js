@@ -44,9 +44,8 @@ window.onload = function() {
                 let html = "";
 
                 res.data.forEach(function(item, index){
-                      const montaEstrutura = template.replace("{IMAGEM}", imagem).replace("{LINK}", link);
                       html +='<div class="item"><a href="'+item.permalink+'""><div class="imagem" style="background-image: url('+item.media_url+');"></div></a></div>';
-
+                      console.log(html)
                 });
               
                 document.getElementById("instagramPosts").innerHTML = html;
