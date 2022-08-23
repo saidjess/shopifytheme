@@ -25,6 +25,10 @@ window.onload = function() {
 
             (data) => data.json();
             console.log(data);
+
+            data.then(function(res) {
+                console.log(res)
+            })
           })
 
           
