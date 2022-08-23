@@ -9,7 +9,7 @@ window.onload = function() {
        )
   .then(function(res) {
     console.log(res);
-    console.log(res.body);
+    console.log(res.data);
 
     res.forEach(function(item){
       console.log(item);
