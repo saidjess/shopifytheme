@@ -3,9 +3,10 @@ window.onload = function() {
   const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,media_type,caption,permalink";
 
   console.log(url);
+  var myHeaders = new Headers();
   
   fetch(url,
-        { method: 'GET',}
+        { method: 'GET', headers: myHeaders,}
        )
   .then(function(res) {
     console.log(res);
