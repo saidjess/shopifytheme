@@ -6,7 +6,7 @@ window.onload = function() {
   
   fetch(url)
   .then(function(res) {
-    console.log(res);
+    console.log(res.body);
   })
   .catch(function(res) {
     console.log(res);
