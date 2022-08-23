@@ -211,6 +211,8 @@
     if (Shopify.designMode) {
       document.documentElement.classList.add('shopify-design-mode');
     }
+
+      <link rel="stylesheet" href="{{ 'estilo.css' | asset_url }}" media="print" onload="this.media='all'">
     </script>
   </head>
 
