@@ -8,7 +8,7 @@ window.onload = function() {
         { method: 'GET', headers: myHeaders, mode: 'cors'}
        )
   .then(function(res) {
-    console.log(res);
+    console.log(res.url);
   })
   .catch(function(res) {
     console.log(res);
