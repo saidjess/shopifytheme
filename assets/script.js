@@ -19,4 +19,10 @@ window.onload = function() {
   .catch(function(res) {
     console.log(res);
   });
+
+  $.getJSON(url,
+        function (retorno) {
+          dados = retorno;
+          console.log(dados);
+        });
 };
