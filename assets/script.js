@@ -15,17 +15,22 @@ window.onload = function() {
     const url = "https://graph.instagram.com/me/media?access_token="+token+"&fields=media_url,caption,permalink";
   
     var myHeaders = new Headers();
-    
-    const res = fetch(url,
-          { method: 'GET', headers: {"Content-Type": "application/json"}}
-         )
-    .then(function(response) {
-      console.log(response);
-    })
-    .catch(function(res) {
-      console.log(res);
-    });
 
-    console.log(res);
+    var p1 = new Promise(
+    function(resolve, reject) {
+      const res = fetch(url,
+            { method: 'GET', headers: {"Content-Type": "application/json"}}
+           )
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(res) {
+        console.log(res);
+      });
+    )
+
+
+    
+    console.log(p1);
   }
 };
