@@ -22,6 +22,9 @@ window.onload = function() {
           }).then(function(response) {
 
             const data = response.json();
+
+            console.log(data);
+            
             if (response.ok) {
               res.json(data);
             }
