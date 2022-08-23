@@ -24,10 +24,10 @@ window.onload = function() {
             console.log(data);
 
             (res) => res.json();
-            
+            console.log(res);
             return res;
 
-            console.log(res);
+            
           })
 
           
