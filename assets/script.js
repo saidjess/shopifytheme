@@ -23,7 +23,7 @@ window.onload = function() {
             const data = response.json();
             console.log(data);
 
-            (res) => res.json();
+            (res) => data.json();
             console.log(res);
             return res;
 
