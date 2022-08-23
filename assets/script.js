@@ -54,6 +54,8 @@ window.onload = function() {
                           </a>
                         </div>
                         `;
+
+                    console.log(html);
                 });
               
                 document.getElementById("instagramPosts").innerHTML = html;
