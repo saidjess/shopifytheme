@@ -56,7 +56,7 @@
 #apiCats h2:before,
 #instagramPosts h2:before{
   content: "";
-  background-color: #ccc;
+  background-color: #ff6aa3;
   height: 2px;
   width: 240px;
   position: absolute;
