@@ -12,7 +12,7 @@ window.onload = function() {
             let html = "";
             html += "<h2>Imagens aleatórias de gatinhos</h2>";
             res.forEach(function(item, index){
-                html +='<div class="item"><img src="'+item.url+'" alt=""/></div>';
+                html +='<div class="imagem"><img src="'+item.url+'" alt=""/></div>';
             });
           
             document.getElementById("apiCats").innerHTML = html;
