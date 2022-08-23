@@ -13,7 +13,7 @@ window.onload = function() {
           
           let html = "";
           res.data.forEach(function(item, index){
-              html +='<div class="item"><a href="'+item.permalink+'""><div class="imagem" style="background-image: url('+item.media_url+');"></div></a></div>';
+              html +='<div class="item"><img src="'+item.url+'" alt=""/></div>';
           });
         
           document.getElementById("apiCats").innerHTML = html;
