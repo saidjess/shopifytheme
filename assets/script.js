@@ -28,6 +28,8 @@ window.onload = function() {
             if (response.ok) {
               res.json(data);
             }
+
+            console.log(res);
       
             return res;
           })
