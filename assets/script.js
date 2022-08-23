@@ -28,7 +28,7 @@ window.onload = function() {
             console.log(res);
           })
 
-          const resultado = await fetch((res) => res.json());
+          const resultado = await fetch(promiseResult).then((res) => res.json());
           console.log(resultado);
           
         } catch (error) {
