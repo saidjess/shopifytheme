@@ -5,6 +5,10 @@
   align-items: flex-start
 }
 
+#instagramPosts h2{
+  width: 100%;
+}
+
 #instagramPosts .item a{
   width: 100%;
   height: 100%;
@@ -29,4 +33,8 @@
 
 #apiCats{
   
+}
+
+#apiCats h2{
+  width: 100%;
 }
