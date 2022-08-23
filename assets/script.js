@@ -41,13 +41,22 @@ window.onload = function() {
                   </div>
                   `;
 
+                let html = "";
+
                 res.data.forEach(function(item, index){
                       const imagem = item.media_url;
                       const link = item.permalink;
                       const montaEstrutura = template.replace("{IMAGEM}", imagem).replace("{LINK}", link);
-
-                      document.getElementById("instagramPosts").append(montaEstrutura);
-                })
+                      html += `
+                        <div class="item">
+                          <a href="{LINK}">
+                            <div class="imagem" style="background-image: url({IMAGEM});"></div>
+                          </a>
+                        </div>
+                        `;
+                });
+              
+                document.getElementById("instagramPosts").append(html);
             })
           })
         } catch (error) {
