@@ -38,7 +38,16 @@
 #apiCats h2{
   width: 100%;
   text-align: center;
-  position: relative
+  position: relative;
+  display: flex;
+}
+
+#apiCats h2:before{
+  content: "";
+  background-color: #000;
+  height: 3px;
+  width: 200px;
+  
 }
 
 #apiCats .item img{
