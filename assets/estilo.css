@@ -47,11 +47,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%
+  width: 100%;
+  margin: 0;
 }
 
-#apiCats h2,
-#instagramPosts h2{
+#apiCats .title h2,
+#instagramPosts .title h2{
   width: auto;
   text-align: center;
   position: relative;
@@ -63,8 +64,8 @@
   font-size: 4rem;
 }
 
-#apiCats h2:before,
-#instagramPosts h2:before{
+#apiCats .title h2:before,
+#instagramPosts .title h2:before{
   content: "";
   background-color: #ff6aa3;
   height: 2px;
