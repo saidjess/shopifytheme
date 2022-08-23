@@ -13,7 +13,7 @@
 
 #instagramPosts .item{
   background-size: cover;
-  width: calc(100%/5 - 20px);
+  width: calc(100%/5);
 }
 
 #instagramPosts .item .imagem{
