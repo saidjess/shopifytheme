@@ -40,17 +40,11 @@ window.onload = function() {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
-                console.log(response.json());
-                const promise = response.json();
-
-                promise.then(function(json) {
-                  console.log(json)
-                });
-
-        console.log(resolve);
+                return response.json();
       }
     )
 
     console.log(p1);
+        console.log(resolve);
   })
 };
