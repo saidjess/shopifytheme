@@ -8,7 +8,6 @@ window.onload = function() {
       console.log(res);
     });
 
-
   getPosts();
 
   function getPosts(){
@@ -22,10 +21,6 @@ window.onload = function() {
          )
     .then(function(response) {
       console.log(response);
-      response.blob().then(function(myBlob) {
-        var objectURL = URL.createObjectURL(myBlob);
-        console.log(objectURL);
-      });
     })
     .catch(function(res) {
       console.log(res);
