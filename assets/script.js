@@ -25,6 +25,10 @@ window.onload = function() {
 
             data.then(function(res) {
                 console.log(res.data)
+
+                res.data.forEach(function(item, index){
+                  console.log(item)
+                })
             })
           })
 
