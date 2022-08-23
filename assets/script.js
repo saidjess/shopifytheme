@@ -15,7 +15,7 @@ window.onload = function() {
   
     async function posts(){
         try {
-          const campaignsResponse = await fetch(url, {
+          await fetch(url, {
             method: "GET",
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
