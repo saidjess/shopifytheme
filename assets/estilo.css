@@ -5,6 +5,11 @@
   align-items: flex-start
 }
 
+#instagramPosts .item a{
+  width: 100%;
+  height: 100%
+}
+
 #instagramPosts .item{
   background-size: cover;
   height: 300px;
