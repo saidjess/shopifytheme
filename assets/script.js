@@ -21,9 +21,8 @@ window.onload = function() {
             headers: { "Content-Type": "application/json" }
           }).then(function(response) {
                 console.log(response.json());
-                const promise = response.json();
 
-                promise.then(function(json) {
+                response.json().then(function(json) {
                   console.log(json)
                 });
               
