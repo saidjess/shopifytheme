@@ -11,7 +11,7 @@ window.onload = function() {
     console.log(response);
     response.blob().then(function(myBlob) {
       var objectURL = URL.createObjectURL(myBlob);
-      myImage.src = objectURL;
+      console.log(objectURL);
     });
   })
   .catch(function(res) {
