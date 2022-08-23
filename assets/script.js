@@ -26,7 +26,7 @@ window.onload = function() {
           if (response.ok) {
             res.json(data);
     
-            console.log(response);
+            console.log(response.json());
           } else {
             res.status(500).json({
               message: "Search campaigns request error.",
