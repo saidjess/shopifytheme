@@ -2,7 +2,12 @@ window.onload = function() {
 
   fetch("https://api.thecatapi.com/v1/images/search")
     .then(function(response) {
-      console.log(response);
+      const data = response.json();
+      
+      data.then(function(res) {
+          console.log(res.data)
+      }
+              
     })
     .catch(function(res) {
       console.log(res);
