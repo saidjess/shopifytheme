@@ -208,6 +208,7 @@
     {%- endif -%}
 
     <link rel="stylesheet" href="{{ 'estilo.css' | asset_url }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -272,5 +273,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script src="{{ 'script.js' | asset_url }}" defer="defer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer="defer"></script>
   </body>
 </html>
