@@ -22,7 +22,7 @@
 
         <div class="itens" id="itens__aboutUs">
           {%- for block in section.blocks -%}
-            <div class="item-{{ block.id }}">
+            <div class="item-{{ block.id }} item">
               <div class="box">
                 <img src="{{ block.settings.image | image_url: width: 550 }}" alt="{{ block.settings.title }}" />
               </div>
