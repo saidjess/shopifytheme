@@ -38,7 +38,7 @@ window.onload = function() {
 
             data.then(function(res) {
                 let html = "";
-                html += '<div class="title"><h2>Testando api instagram</h2></div>';
+                html += '<div class="title"><h2>Siga nosso instagram</h2></div>';
                 res.data.forEach(function(item, index){
                   if(index < 5){
                       html +='<div class="item"><a href="'+item.permalink+'""><div class="imagem" style="background-image: url('+item.media_url+');"></div></a></div>';
