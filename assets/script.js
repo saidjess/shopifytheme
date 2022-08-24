@@ -52,4 +52,10 @@ window.onload = function() {
           console.log(error)
         }
     }
+
+    $('#itens__aboutUs').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
 };
