@@ -1,38 +1,3 @@
-.custom__section{
-  
-}
-
-.custom__section .item{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 4rem 0;
-}
-
-.custom__section .item .box{
-  
-}
-
-.custom__section .item .box:last-child{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-  
-.custom__section .item .box h2{
-  color: {{ block.settings.title_color }};
-  width: 100%;
-  font-weight: bold;
-}
-
-.custom__section .item .box p{
-  color: {{ block.settings.details_color }};
-  width: 100%;
-}
-
-
 
 
 #instagramPosts{

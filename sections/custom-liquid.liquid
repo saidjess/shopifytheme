@@ -22,7 +22,40 @@
 
         <div class="itens" id="itens__aboutUs">
           {%- for block in section.blocks -%}
-            <div class="item-{{ block.id }} item">
+  
+          {%- style -%}
+          .item-{{ block.id }}{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 4rem 0;
+          }
+          
+          .item-{{ block.id }} .box{
+            width: calc(100%/2 - 20px)
+          }
+  
+          .item-{{ block.id }} .box:last-child{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+          }
+            
+          .item-{{ block.id }} .box h2{
+            color: {{ block.settings.title_color }};
+            width: 100%;
+            font-weight: bold;
+          }
+  
+          .item-{{ block.id }} .box p{
+            color: {{ block.settings.details_color }};
+            width: 100%;
+          }
+          {%- endstyle -%}
+            
+            <div class="item-{{ block.id }}">
               <div class="box">
                 <img src="{{ block.settings.image | image_url: width: 550 }}" alt="{{ block.settings.title }}" />
               </div>
