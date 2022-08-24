@@ -11,7 +11,7 @@
 }
 
 .custom__section .item .box{
-  width: calc(100%/2 - 20px)
+  
 }
 
 .custom__section .item .box:last-child{
