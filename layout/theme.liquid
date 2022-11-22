@@ -275,7 +275,7 @@
     <script src="{{ 'script.js' | asset_url }}" defer="defer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer="defer"></script>
     <script>
-      await fetch("/{{ request.locale.iso_code }}/cart/prepare_shipping_rates.json", {
+      fetch("/{{ request.locale.iso_code }}/cart/prepare_shipping_rates.json", {
         method: "POST",
         headers: { "Content-Type": "application/json" }
       }).then(function (response) {
