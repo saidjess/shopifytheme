@@ -214,7 +214,30 @@
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     if (Shopify.designMode) {
       document.documentElement.classList.add('shopify-design-mode');
-    }    
+    }
+
+      shippingRates();
+
+    async function shippingRates() {
+      await fetch("/cart/prepare_shipping_rates.json", {
+        method: "POST",
+        body: "19409-000",
+        headers: { "Content-Type": "application/json" }
+      }).then(function (response) {
+        console.log(response)
+        const data = response.json();
+        console.log(data)
+  
+        data.then(function (res) {
+        console.log(res)
+          
+          
+        })
+      })
+      .catch(function (res) {
+        console.log(res);
+      });
+  }
     </script>
   </head>
 
