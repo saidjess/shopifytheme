@@ -1,27 +1,4 @@
 window.onload = function () {
-  shippingRates();
-
-  async function shippingRates() {
-    await fetch("/cart/prepare_shipping_rates.json", {
-      method: "POST",
-      body: "19409-000",
-      headers: { "Content-Type": "application/json" }
-    }).then(function (response) {
-      console.log(response)
-      const data = response.json();
-      console.log(data)
-
-      data.then(function (res) {
-      console.log(res)
-        
-        
-      })
-    })
-      .catch(function (res) {
-        console.log(res);
-      });
-  }
-
   cats();
 
   async function cats() {
