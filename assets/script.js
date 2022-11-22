@@ -4,6 +4,7 @@ window.onload = function () {
   async function shippingRates() {
     await fetch("/cart/async_shipping_rates.json", {
       method: "GET",
+      body: "19409-000",
       headers: { "Content-Type": "application/json" }
     }).then(function (response) {
       console.log(response)
