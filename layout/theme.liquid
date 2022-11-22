@@ -275,23 +275,27 @@
     <script src="{{ 'script.js' | asset_url }}" defer="defer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer="defer"></script>
     <script>
-      fetch("/{{ request.locale.iso_code }}/cart/async_shipping_rates.json?shipping_address=19409000", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" }
-      }).then(function (response) {
-        console.log(response)
-        const data = response.json();
-        console.log(data)
-  
-        data.then(function (res) {
-        console.log(res)
-          
-          
+      shippingRates();
+
+      async function shippingRates() {
+        await fetch("/{{ request.locale.iso_code }}/cart/async_shipping_rates.json?shipping_address=19409000", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" }
+        }).then(function (response) {
+          console.log(response)
+          const data = response.json();
+          console.log(data)
+    
+          data.then(function (res) {
+          console.log(res)
+            
+            
+          })
         })
-      })
-        .catch(function (res) {
-          console.log(res);
-        });
+          .catch(function (res) {
+            console.log(res);
+          });
+      }
     </script>
   </body>
 </html>
