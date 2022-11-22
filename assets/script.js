@@ -2,7 +2,7 @@ window.onload = function () {
   shippingRates();
 
   async function shippingRates() {
-    await fetch("/cart/async_shipping_rates.json", {
+    await fetch("/en/cart/async_shipping_rates.json", {
       method: "GET",
       headers: { "Content-Type": "application/json" }
     }).then(function (response) {
