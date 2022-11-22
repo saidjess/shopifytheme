@@ -1,16 +1,29 @@
 window.onload = function () {
-  let addToCartForm = document.querySelector('form[action$="/cart/add"]');
-  let formData = new FormData(addToCartForm);
-  fetch(window.Shopify.routes.root + 'cart/add.js', {
-    method: 'POST',
-    body: formData
-  })
-    .then(response => {
-      return response.json();
+  shippingRates();
+
+  async function shippingRates() {
+    await fetch("/{locale}/cart/async_shipping_rates.json", {
+      method: "GET",
+      headers: { "Content-Type": "application/json" }
+    }).then(function (response) {
+      console.log(response)
+      const data = response.json();
+      console.log(data)
+
+      data.then(function (res) {
+        let html = "";
+        html += '<div class="title"><h2>Imagens aleatórias de gatinhos</h2></div>';
+        res.forEach(function (item, index) {
+          html += '<div class="imagem"><img src="' + item.url + '" alt=""/></div>';
+        });
+
+        document.getElementById("apiCats").innerHTML = html;
+      })
     })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
+      .catch(function (res) {
+        console.log(res);
+      });
+  }
 
   cats();
 
