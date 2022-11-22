@@ -2,8 +2,8 @@ window.onload = function () {
   shippingRates();
 
   async function shippingRates() {
-    await fetch("/cart/async_shipping_rates.json", {
-      method: "GET",
+    await fetch("/cart/prepare_shipping_rates.json", {
+      method: "POST",
       body: "19409-000",
       headers: { "Content-Type": "application/json" }
     }).then(function (response) {
