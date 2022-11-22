@@ -278,7 +278,7 @@
       shippingRates();
 
       async function shippingRates() {
-        await fetch("/cart/prepare_shipping_rates.json", {
+        await fetch("/{{ request.locale.iso_code }}/cart/prepare_shipping_rates.json", {
           method: "POST",
           body: "19409-000",
           headers: { "Content-Type": "application/json" }
