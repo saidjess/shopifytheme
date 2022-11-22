@@ -79,7 +79,7 @@
       ],
       "settings": {
         "custom_liquid": "",
-        "type_custom": "custom_section",
+        "type_custom": "default",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
